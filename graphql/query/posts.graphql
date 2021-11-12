@@ -1,0 +1,10 @@
+query Posts {
+  postsConnection {
+    edges {
+      cursor
+      node {
+        ...RegularPost
+      }
+    }
+  }
+}

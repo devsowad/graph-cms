@@ -1,0 +1,22 @@
+fragment RegularPost on Post {
+  id
+  title
+  slug
+  createdAt
+  excerpt
+  featuredImage {
+    url
+  }
+  author {
+    bio
+    name
+    id
+    photo {
+      url
+    }
+  }
+  categories {
+    name
+    slug
+  }
+}
